@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.664);
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    color: rgb(94, 51, 51);;
+    box-shadow: 0 0 5px .1px rgba(0, 0, 0, 0.466);
+}
+
+.header-marquee {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.header h4 {
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    height: 70px;
+}

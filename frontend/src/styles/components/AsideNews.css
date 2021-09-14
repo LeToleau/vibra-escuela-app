@@ -1,0 +1,13 @@
+.aside-article {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(212, 231, 231);
+    width: 70%;
+    align-items: center;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+.aside-img {
+    width: 100%;
+}

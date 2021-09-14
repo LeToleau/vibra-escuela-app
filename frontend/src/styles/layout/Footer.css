@@ -1,0 +1,57 @@
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(206, 233, 233);
+    padding: 1rem;
+}
+
+.footer img {
+    height: 400px;
+}
+
+
+
+.rrss {
+    display: flex;
+    width: 35%;
+}
+
+.rrss ul {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.rrss ul li img {
+    height: 60px;
+}
+
+.staff {
+    display: flex;
+    align-items: center;
+}
+
+.staff h4 {
+    margin-right: .5rem;
+}
+
+.staff img {
+    height: 220px;
+}
+
+.staff ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.staff ul li h5 {
+    text-align: center;
+    font-weight: 500;
+}
+
+

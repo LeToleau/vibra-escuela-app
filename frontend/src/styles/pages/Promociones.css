@@ -1,0 +1,49 @@
+.promociones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.774), rgba(255, 255, 255, 0.459)), url('./../../img/marquee-bg.jpg');
+    background-size: cover;
+    color:white;
+    padding: 5rem 2rem 2rem;
+    background-attachment: fixed;
+}
+
+.promociones .container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(73, 78, 78, 0.336);
+    padding: .5rem 2rem 0;
+    border-radius: 15px;
+}
+
+.promo-item-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.promo-item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(28, 38, 73, 0.925);
+    padding: 1rem .5rem;
+    border-radius: 15px;
+    margin: .5rem 0;
+    width: 100%;
+}
+
+.tit-desc {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+}
+
+.promo-item-list .promo-item p {
+    font-size: 30px;
+}

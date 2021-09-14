@@ -1,0 +1,71 @@
+.inscripcion {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.774), rgba(255, 255, 255, 0.459)), url('./../../img/marquee-bg.jpg');
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+
+.inscripcion .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(73, 78, 78, 0.336);
+    padding: 0 2rem .5rem;
+    border-radius: 15px;
+    height: 90vh;
+    margin-top: 9vh;
+}
+
+.inscripcion .container .insc-inner {
+    text-align: center;
+
+}
+
+
+.inscripcion .container .insc-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+}
+
+.inscripcion .container .insc-form form p,
+.inscripcion .container .insc-form form p input {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.inscripcion .container .insc-form form p label {
+    margin-right: .5rem;
+    width: 20%;
+}
+.inscripcion .container .insc-form form p.textarea label {
+    width: 100%;
+}
+
+.inscripcion .container .insc-form form .textarea {
+    display: flex;
+    flex-direction: column;
+}
+
+.inscripcion .container .insc-form form p.centrar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+ 
+.inscripcion .container .insc-form form p.centrar input {
+    width: 150px;
+}
+
+.inscripcion .container .insc-form form p.centrar span {
+    position: absolute;
+    right: calc((75% - 150px) /2)
+}

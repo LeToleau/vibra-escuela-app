@@ -1,0 +1,45 @@
+<div class="pagescape container">
+    <div class="row">
+        <div class="col">
+            <p class="text-right">Hola, {{ usuario }} !</p>
+        </div>
+    </div>
+    <div class="row head">
+        <div class="col-7">
+            <h3>Listado de Promociones</h3>
+        </div>
+        <div class="col-2 text-right">
+            <a href="/admin/promociones/agregar" class="btn btn-success"><i class="fa fa-plus"></i> Nuevo</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead class="thead-dark">
+                    <td scope="col">Titulo</td>
+                    <td scope="col">#</td>
+                    <td scope="col">Imagen</td>
+                    <td scope="col">Descripción</td>
+                    <td scope="col">Precio</td>
+                    <td scope="col">Acciones</td>
+                </thead>
+                <tbody>
+                    {{#each promos}}
+                    <tr>
+                        <th scope="row">{{title}}</th>
+                        <td>{{id_promo}}</td>
+                        <td>{{{imagen}}}</td>
+                        <td>{{description}}</td>
+                        <td>{{price}}</td>
+                        <td class="text-center">
+                            <a href="/admin/promociones/modificar/{{id_promo}}" title="Editar"class="btn btn-sm btn-secondary"><i class="fa fa-pencil"></i></a>
+                            <a href="/admin/promociones/eliminar/{{id_promo}}" title="Eliminar"class="btn btn-sm btn-secondary"><i class="fa fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <a href="/admin/login/logout" class="btn btn-sm btn-danger">Cerrar Sesión <i class="fa fa-sign-out"></i></a>
+</div>

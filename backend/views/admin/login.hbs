@@ -1,0 +1,16 @@
+<div class="container formulario">
+  <form action="/admin/login" method="post">
+    <div class="mb-3">
+      <label for="usuario" class="form-label">Usuario</label>
+      <input type="text" class="form-control" id="usuario" name="usuario">
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" class="form-control" id="password" name="password">
+    </div>
+    <button type="submit" class="btn btn-primary">Ingresar</button>
+  </form>
+  {{#if error}}
+    <p class="error">El usuario y/o contraseña son incorrectos.</p>
+  {{/if}}
+</div>
